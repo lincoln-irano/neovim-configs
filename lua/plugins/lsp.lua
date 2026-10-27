@@ -21,6 +21,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "ts_ls",
+        "gopls"
       },
 
       automatic_enable = true,
@@ -50,6 +51,18 @@ return {
             telemetry = {
               enable = false,
             },
+          },
+        },
+      })
+      -- Configurações do Go Language Server
+      vim.lsp.config("gopls", {
+        settings = {
+          gopls = {
+            analyses = {
+              unusedparams = true,
+            },
+
+            staticcheck = true,
           },
         },
       })

@@ -20,7 +20,7 @@ return {
       markdown = { "biome" },
       yaml = { "biome" },
 
-      go = { "gofmt" },
+      go = { "goimports", "gofmt" },
     },
 
     -- Biome somente em projetos configurados
